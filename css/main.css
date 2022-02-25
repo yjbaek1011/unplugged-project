@@ -145,7 +145,14 @@ address {
      margin: 50px 0;
    }
 
-   /*----------------Header & Footer style--------------*/
+   img {
+    width: 100%;
+  }
+  
+  figure {
+    margin: 0;
+  }
+   /*----------------Base Header & Footer style--------------*/
 
 
 header, footer {
@@ -166,6 +173,14 @@ header .content-wrapper {
   align-items:center;
   flex-flow:row wrap;
   margin: 0;
+}
+
+header figure {
+  width:60%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap;
 }
 
 .header-divider {
@@ -240,6 +255,10 @@ footer .copyright {
   display:flex;
   justify-content: center;
   flex-flow:row wrap;
+  background:url('../img/hero.jpg');
+  background-size: cover;
+  background-position:center;
+  min-height:500px;
 }
 
 .hero-area h1 {
@@ -291,7 +310,10 @@ input[type=button] {
 .features {
   display:flex;
   justify-content: center;
-flex-flow:row wrap;
+  flex-flow:row wrap;
+  background: url(../img/features.jpg);
+  background-size:cover;
+  background-position:cover;
 }
 
 .features h2 {
@@ -322,7 +344,7 @@ flex-flow:row wrap;
   background-color:#2a423a;
   display:flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .reviews h2 {
@@ -519,6 +541,10 @@ header nav ul{
     display: none;
   }
 
+  header figure {
+    width: 30%;
+  }
+
 /*Hero Area*/
 .hero-area h1 {
   font-size: 3em;
@@ -564,6 +590,11 @@ aside .content-wrapper .form {
 
 .reviews h2 {
   width: 85%;
+}
+
+.reviews article figure,
+.reviews article div {
+  width:49%;
 }
 
 .reviews article div {
@@ -713,6 +744,10 @@ h2 {
 
   .reviews article div {
     width: 42%;
+  }
+
+  .reviews h2 {
+    padding-bottom: 50px;
   }
 
   footer h4 {
